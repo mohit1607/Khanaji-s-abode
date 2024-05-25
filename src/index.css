@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: serif hindi;
+    src: url("./assets//fonts/DevLys\ 280.ttf");
+}
+
+@font-face {
+    font-family: bestfont;
+    src: url('./assets/./fonts/Sacramento-Regular.ttf');
+}
+
+@font-face {
+    font-family: kaivalya;
+    src: url('./assets/fonts/KaivalyaIkiikocom-0Wy9r.otf');
+}
+
+.animate{
+    background: linear-gradient(-90deg, #FFD700, #4169E1);
+    animation: gradient 5s infinite;
+    background-size: 400% 400%;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.shake-feather {
+    animation: shake-animation 6.72s ease infinite;
+    transform-origin:  0% 100%;
+  }
+
+@keyframes shake-animation {
+    0% { transform:rotate(10deg) }
+   1.78571% { transform:rotate(-10deg) }
+   3.57143% { transform:rotate(10deg) }
+   5.35714% { transform:rotate(-10deg) }
+   7.14286% { transform:rotate(10deg) }
+   8.92857% { transform:rotate(-10deg) }
+   10.71429% { transform:rotate(10deg) }
+   100% { transform:rotate(0deg) }
+ }
+
