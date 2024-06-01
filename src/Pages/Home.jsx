@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
     <Hero></Hero>
-    <StoriesSlider></StoriesSlider>
+    {/* <StoriesSlider></StoriesSlider> */}
     {/* <Explore></Explore>
     <Testimonials></Testimonials>
     <TempleSection></TempleSection>
