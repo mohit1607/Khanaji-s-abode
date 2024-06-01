@@ -18,8 +18,8 @@
 }
 
 .animate{
-    background: linear-gradient(-90deg, #FFD700, #4169E1);
-    animation: gradient 5s infinite;
+    background: linear-gradient(90deg, #FFD700, #4169E1);
+    animation: gradient 3s infinite;
     background-size: 400% 400%;
 }
 
@@ -52,4 +52,12 @@
    10.71429% { transform:rotate(10deg) }
    100% { transform:rotate(0deg) }
  }
+
+ .swiper-button-prev {
+    color: yellow; 
+}
+
+.swiper-button-next {
+    color: yellow; 
+}
 

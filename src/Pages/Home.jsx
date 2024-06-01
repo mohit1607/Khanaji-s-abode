@@ -4,6 +4,8 @@ import Testimonials from '../components/Testimonials'
 import Explore from '../components/Explore'
 import TempleSection from '../components/TempleSection'
 import KrishnaMusic from '../components/KrishnaMusic'
+import StoriesSlider from '../components/StoriesSlider'
+
 
 const Home = () => {
   // This page will majorly include the life and theme of Khanaji's life.
@@ -12,6 +14,7 @@ const Home = () => {
   return (
     <>
     <Hero></Hero>
+    <StoriesSlider></StoriesSlider>
     {/* <Explore></Explore>
     <Testimonials></Testimonials>
     <TempleSection></TempleSection>
