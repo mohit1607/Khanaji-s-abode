@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Testimonials from '../components/Testimonials'
 import Explore from '../components/Explore'
-import TempleSection from '../components/TempleSection'
+import TempleSection from '../components/TempleCard'
 import KrishnaMusic from '../components/KrishnaMusic'
 import StoriesSlider from '../components/StoriesSlider'
 
@@ -13,12 +13,12 @@ const Home = () => {
 
   return (
     <>
-    <Hero></Hero>
-    {/* <StoriesSlider></StoriesSlider> */}
-    {/* <Explore></Explore>
-    <Testimonials></Testimonials>
-    <TempleSection></TempleSection>
-    <KrishnaMusic></KrishnaMusic> */}
+    <Hero></Hero> 
+    <StoriesSlider></StoriesSlider>
+    <Explore></Explore>
+    {/* <Testimonials></Testimonials> */}
+    {/* <TempleSection></TempleSection> */}
+    {/* <KrishnaMusic></KrishnaMusic> */}
     </>
   )
 }

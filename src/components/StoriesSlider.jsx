@@ -11,8 +11,8 @@ import Krishna from '../assets/images/krishna.png'
 
 const StoriesSlider = () => {
     const [swiperRef, setSwiperRef] = useState(null);
-    const appendNumber = useRef(500);
-    const prependNumber = useRef(1);
+    // const appendNumber = useRef(500);
+    // const prependNumber = useRef(1);
     // Create array with 500 slides
     const slides = [
         {
@@ -63,14 +63,15 @@ const StoriesSlider = () => {
 
 
   return (
-    <div className='w-full h-auto bg-indigo p-16 pb-20 overflow-hidden px-[12rem]'>
+    <div className='w-full h-auto bg-indigo p-16 pb-20 overflow-hidden lg:px-[12rem] hidden md:block'>
         <h2 className='text-center font-headingfont  text-7xl text-white mb-12'>Stories</h2>
-        <div className='w-full h-[28rem]  overflow-hidden'>
+        <div className='w-full md:h-[20rem] lg:h-[28rem]  overflow-hidden'>
             <Swiper
             className='w-full h-full px-10'
             modules={[Virtual, Navigation, Pagination, Autoplay]}
             onSwiper={setSwiperRef}
             slidesPerView={3}
+            // need a size change event listener to assign the slides value again
             centeredSlides={true}
             spaceBetween={40}
             initialSlide={2}

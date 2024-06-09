@@ -15,7 +15,7 @@ const Nav = () => {
       <div onClick={() => navigate("/")} className='sm:w-[6rem] sm:h-[6rem] h-[3rem] w-[3rem] cursor-pointer'><img src={Yantra} className='w-full h-full object-cover' alt="Krishna_yantra" /></div>
       <div onClick={() => setToggle(prev => !prev)}  className='sm:w-[8rem] sm:h-[8rem] h-[3rem] w-[3rem] shake-feather cursor-pointer'><img src={feather2} className='w-full h-full object-contain rotate-[45deg] z-[10]' alt="Peacock feather icon" /></div>
     </div>
-    <div className={`lg:h-[100vmin] h-full w-[100%] lg:w-[40%] bg-sea-green z-[9] fixed top-0 right-0 ease-in-out duration-700 ${toggle ? '-translate-x-0' : 'translate-x-[1500px]'} p-8`}>
+    <div className={`lg:h-[100vmin] h-full w-[100%] lg:w-[40%] bg-sea-green z-[20] fixed top-0 right-0 ease-in-out duration-700 ${toggle ? '-translate-x-0' : 'translate-x-[1500px]'} p-8`}>
       <div className='relative w-full h-full'>
        {/* feather */}
         <div className='fixed invisible md:visible lg:-left-[15rem] top-10 scale-75'>
@@ -28,16 +28,16 @@ const Nav = () => {
             <NavLink to="/">Stories</NavLink>
           </li>
           <li className='text-7xl font-headingfont hover:underline'>
-            <NavLink to="/">Temples</NavLink>
+            <NavLink to="/temples" onClick={() => setToggle(false)}>Temples</NavLink>
           </li>
           <li className='text-7xl font-headingfont hover:underline'>
-            <NavLink to="/">Events</NavLink>
+            <NavLink to="/" onClick={() => setToggle(false)}>Events</NavLink>
           </li>
           <li className='text-7xl font-headingfont hover:underline'>
-            <NavLink to="/">Shop</NavLink>
+            <NavLink to="/" onClick={() => setToggle(false)}>Shop</NavLink>
           </li>
           <li className='text-7xl font-headingfont hover:underline'>
-            <NavLink to="/">Music</NavLink>
+            <NavLink to="/" onClick={() => setToggle(false)}>Music</NavLink>
           </li>
         </ul>
       </div>
