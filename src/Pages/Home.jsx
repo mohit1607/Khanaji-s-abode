@@ -18,7 +18,7 @@ const Home = () => {
     <Explore></Explore>
     {/* <Testimonials></Testimonials> */}
     {/* <TempleSection></TempleSection> */}
-    {/* <KrishnaMusic></KrishnaMusic> */}
+    <KrishnaMusic></KrishnaMusic>
     </>
   )
 }
